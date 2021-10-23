@@ -1,0 +1,1 @@
+worker: pyhton TelBot.py
