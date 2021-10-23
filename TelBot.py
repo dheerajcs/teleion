@@ -32,7 +32,7 @@ async def forwardhandler(event):
 
 
 @client.on(events.NewMessage(chats=to_channel))
-async def forwardhandler(event):
+async def unknownHAndler(event):
     global ms, t
     if t == 20:
         ms = []
