@@ -27,7 +27,7 @@ async def forwardhandler(event):
     txt = event.text
     txt = re.sub(r'^https?:\/\/.*[\r\n]*', '', re.sub(' +', ' ',txt), flags=re.MULTILINE)
     txt = '*'+txt+'*'
-    bot.send_message(to_channel, '{}'.format(txt), parse_mode= "Markdown")
+    bot.send_message(to_channel, '{}'.format(txt))
     ms.append({'txt':txt.strip('*'), 'fromid':event.message.id})
 
 
@@ -52,7 +52,7 @@ async def edit(event):
     for item in ms:
         if event.message.id in item.values():
             txt = re.sub(' +', ' ',event.message.message)
-            await client.edit_message(to_channel, int(item['toid']) ,"**{}**".format(txt, item['fromid']), parse_mode= "Markdown")
+            await client.edit_message(to_channel, int(item['toid']) ,"**{}**".format(txt, item['fromid']))
 
 
 client.start()
