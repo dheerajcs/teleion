@@ -27,7 +27,7 @@ async def forwardhandler(event):
     txt = event.text
     txt = re.sub(r'^https?:\/\/.*[\r\n]*', '', re.sub(' +', ' ',txt), flags=re.MULTILINE)
     txt = '*'+txt+'*'
-    bot.send_message(to_channel, '{}'.format(txt))
+    bot.send_message(to_channel, '{}'.format(txt), parse_mode="markdown")
     ms.append({'txt':txt.strip('*'), 'fromid':event.message.id})
 
 
