@@ -7,8 +7,8 @@ api_hash = '1a408061ca6bd91023fca3ba39451111'
 client = TelegramClient('dk', api_id, api_hash)
 TOKEN ='2080552138:AAGZ_hghChvoCnA17vutzgMK0viVEsRutms'
 bot = telebot.TeleBot(TOKEN)
-from_channel = '@Fancodefastline'
-to_channel = '@kokoihbh'
+from_channel = '@edwae1'
+to_channel = '@nsjsbjs'
 
 
 print("Connected")
