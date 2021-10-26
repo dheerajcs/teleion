@@ -7,8 +7,13 @@ api_hash = '1a408061ca6bd91023fca3ba39451111'
 client = TelegramClient('fk', api_id, api_hash)
 TOKEN ='2080552138:AAGZ_hghChvoCnA17vutzgMK0viVEsRutms'
 bot = telebot.TeleBot(TOKEN)
+<<<<<<< HEAD
 from_channel = '@live_match_score_cricket_line'
 to_channel = '@kokoihbh'
+=======
+from_channel = '@edwae1'
+to_channel = '@nsjsbjs'
+>>>>>>> 29ea47fe32f7d5609615af1c62c81d24e15747a2
 
 
 print("Connected")
