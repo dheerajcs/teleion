@@ -5,10 +5,10 @@ import re
 api_id = 7579425
 api_hash = '1a408061ca6bd91023fca3ba39451111'
 client = TelegramClient('fk', api_id, api_hash)
-TOKEN ='2030087801:AAHyXpxkuaMlEbaxaVe7NxDpi4D1RKVCvkg'
+TOKEN ='2080552138:AAGZ_hghChvoCnA17vutzgMK0viVEsRutms'
 bot = telebot.TeleBot(TOKEN)
 from_channel = '@live_match_score_cricket_line'
-to_channel = '@nsjsbjs'
+to_channel = '@kokoihbh'
 
 
 print("Connected")
